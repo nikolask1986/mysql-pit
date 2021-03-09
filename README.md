@@ -62,6 +62,7 @@ Go back to the management script and select option 4 again. The last part of the
 ![Alt text](/screenshots/pit5.png?raw=true "script welcome screenshot")
 
 Lets try to create a new database before the last user was created. To do that, we need the start and end point of the log , in this case 431 to 1164
+
 Select option 5 and enter the values.
 
 ![Alt text](/screenshots/pit6.png?raw=true "script welcome screenshot")
