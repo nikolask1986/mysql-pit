@@ -40,12 +40,15 @@ Run the script
 ![Alt text](/screenshots/pit1.png?raw=true "script welcome screenshot")
 
 Option 1 will show all the binary logs of the database
+
 ![Alt text](/screenshots/pit2.png?raw=true "script welcome screenshot")
 
 Option 2 will show the current active binary log of the database
+
 ![Alt text](/screenshots/pit3.png?raw=true "script welcome screenshot")
 
 Option 3 will let you choose a binary log. Select option 3 and type **mysql-bin.000003**
+
 ![Alt text](/screenshots/pit4.png?raw=true "script welcome screenshot")
 
 Option 4 will show the selected binary log. 
@@ -55,13 +58,16 @@ INSERT INTO nameDB (firstname, lastname, email)
 VALUES ('Julie', 'Phelan', 'julie.phelan@email.com');
 ```
 Go back to the management script and select option 4 again. The last part of the log should be the user we just created. 
+
 ![Alt text](/screenshots/pit5.png?raw=true "script welcome screenshot")
 
 Lets try to create a new database before the last user was created. To do that, we need the start and end point of the log , in this case 431 to 1164
 Select option 5 and enter the values.
+
 ![Alt text](/screenshots/pit6.png?raw=true "script welcome screenshot")
 
 Now go back to the mysql container and check if the database was created
+
 ![Alt text](/screenshots/pit7.png?raw=true "script welcome screenshot")
 
 When the database comes to a point which is unmanageable to view the whole binary log, the script can be modified to use time specific search by using:
