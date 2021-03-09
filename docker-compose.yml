@@ -1,0 +1,14 @@
+version: '3'
+services:
+  db:
+    container_name: "${database_container_name}"
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+             --user="${database_user}"
+             --server-id=1
+             --log-bin=/var/lib/mysql/mysql-bin.log
+             --binlog_do_db="${database_name}"                     
+    environment:
+      MYSQL_ROOT_PASSWORD: "${database_password}"
+      database_name: "${database_name}"
+      database_backup_name: "${database_backup_name}"
